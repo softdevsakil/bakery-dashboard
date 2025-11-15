@@ -97,9 +97,9 @@ if not data.empty:
             city_rev = df_filtered.groupby("city")["revenue"].sum().reset_index().sort_values("revenue",
                                                                                               ascending=False)
             fig, ax = plt.subplots(figsize=(10, 6))
-            sns.barplot(x="revenue", y="city", data=city_rev, palette="magma", ax=ax)
-            ax.set_xlabel("Revenue ($)")
-            ax.set_ylabel("City")
+            sns.barplot(x="city", y="revenue", data=city_rev, palette="magma", ax=ax)
+            ax.set_ylabel("Revenue ($)")
+            ax.set_xlabel("City")
             plt.tight_layout()
             st.pyplot(fig)
         else:
@@ -111,9 +111,9 @@ if not data.empty:
             prod_profit = df_filtered.groupby("product")["profit"].sum().reset_index().sort_values("profit",
                                                                                                    ascending=False)
             fig, ax = plt.subplots(figsize=(10, 6))
-            sns.barplot(x="profit", y="product", data=prod_profit, palette="crest", ax=ax)
-            ax.set_xlabel("Profit ($)")
-            ax.set_ylabel("Product")
+            sns.barplot(x="product", y="profit", data=prod_profit, palette="crest", ax=ax)
+            ax.set_ylabel("Profit ($)")
+            ax.set_xlabel("Product")
             plt.tight_layout()
             st.pyplot(fig)
         else:
@@ -128,9 +128,9 @@ if not data.empty:
             units_sold = df_filtered.groupby("product")["units_sold"].sum().reset_index().sort_values("units_sold",
                                                                                                       ascending=False)
             fig, ax = plt.subplots(figsize=(10, 6))
-            sns.barplot(x="units_sold", y="product", data=units_sold, palette="plasma", ax=ax)
-            ax.set_xlabel("Units Sold")
-            ax.set_ylabel("Product")
+            sns.barplot(x="product", y="units_sold", data=units_sold, palette="plasma", ax=ax)
+            ax.set_ylabel("Units Sold")
+            ax.set_xlabel("Product")
             plt.tight_layout()
             st.pyplot(fig)
         else:

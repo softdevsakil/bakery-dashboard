@@ -1,7 +1,5 @@
 # 🥐 Bakery Sales Analytics Dashboard
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Bakery+Sales+Dashboard)
-
 A comprehensive analytics dashboard for bakery sales data that provides insights into revenue trends, profitability, and performance metrics across products and cities.
 
 ## 📋 Project Overview
@@ -37,7 +35,7 @@ This project analyzes bakery sales data to help business owners understand their
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/bizibuilds/bakery-dashboard.git
+   git clone https://github.com/softdevsakil/bakery-dashboard.git
    cd bakery-dashboard
    ```
 
@@ -65,9 +63,12 @@ bakery-dashboard/
 ├── data_processor.py      # Data fetching and processing
 ├── report_generator.py    # Excel/PDF report generation
 ├── email_sender.py        # Automated email delivery
-├── config.py             # Configuration settings
-├── requirements.txt      # Python dependencies
-└── README.md            # Project documentation
+├── config.py              # Configuration settings
+├── requirements.txt       # Python dependencies
+├── bakery_sales.csv       # Dummy data, if not able to connect database
+├── reports/               # Generated PDF & CSV will store here
+├── logs/                  # Data generation logs will store here
+└── README.md              # Project documentation
 ```
 
 ## 🔧 Configuration
@@ -99,7 +100,7 @@ EMAIL_PASSWORD=your_app_password
 ### 🏆 Top Performers
 - **Highest Revenue City**: Sylhet
 - **Most Profitable Product**: Croissant
-- **Best Margin Product**: Chocolate Cake
+- **Best Margin Product**: Croissant
 
 ### 📈 Performance Metrics
 - Total revenue trends over time
@@ -108,7 +109,7 @@ EMAIL_PASSWORD=your_app_password
 - Seasonal sales patterns
 
 ### 🎯 Improvement Opportunities
-- **Chittagong**: Lowest margins, needs promotional strategies
+- **Dhaka**: Lowest margins, needs promotional strategies
 - **Underperforming Products**: Identify and optimize pricing
 - **Seasonal Opportunities**: Capitalize on peak sales periods
 
@@ -127,9 +128,7 @@ Check out the live dashboard:
 
 ### Filter Options
 - Select specific cities or products
-- Choose date ranges for analysis
 - Filter by product categories
-- Compare multiple time periods
 
 ### Report Generation
 - **Excel Reports**: Detailed data with charts
@@ -161,14 +160,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- 📧 Email: your-email@example.com
-- 🐛 Issues: [GitHub Issues](https://github.com/bizibuilds/bakery-dashboard/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/bizibuilds/bakery-dashboard/discussions)
+- 📧 Email: softdevsakil@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/softdevsakil/bakery-dashboard/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/softdevsakil/bakery-dashboard/discussions)
 
 ## 🙏 Acknowledgments
 
-- Data provided by [Your Data Source]
-- Icons by [Icon Library]
+- Data provided by [Dummy Sales Data from Prime Bread & Bakery](#)
+- Icons by [Icon Library](#)
 - Built with [Streamlit](https://streamlit.io/)
 
 ---

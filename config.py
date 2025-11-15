@@ -8,8 +8,8 @@ load_dotenv()
 DB_CONFIG = {
     'host': os.getenv('DB_HOST', 'localhost'),
     'port': os.getenv('DB_PORT', '5432'),
-    'database': os.getenv('DB_NAME', 'bakery_db'),
-    'user': os.getenv('DB_USER', 'postgres'),
+    'database': os.getenv('DB_NAME', 'bakery_sales'),
+    'user': os.getenv('DB_USER', 'your_username'),
     'password': os.getenv('DB_PASSWORD', 'your_db_pass')
 }
 
@@ -18,7 +18,7 @@ EMAIL_CONFIG = {
     'smtp_server': os.getenv('SMTP_SERVER', 'smtp.gmail.com'),
     'smtp_port': int(os.getenv('SMTP_PORT', 587)),
     'email_user': os.getenv('EMAIL_USER', 'your_email@gmail.com'),
-    'email_password': os.getenv('EMAIL_PASSWORD', 'email_password'),
+    'email_password': os.getenv('EMAIL_PASSWORD', 'your_app_password'),
     'to_email': os.getenv('TO_EMAIL', 'to_your_boss@gmail.com')
 }
 
